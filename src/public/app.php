@@ -18,7 +18,7 @@ if ($path === '') {
 }
 
 $mustache = new Mustache_Engine([
-    'loader' => new Mustache_Loader_FilesystemLoader(__DIR__ . '/../../pages/templates'),
+    'loader' => new Mustache_Loader_FilesystemLoader(__DIR__ . '/../../pages/templates', ['extension' => '.tmpl.html']),
 ]);
 
 switch ($path) {
