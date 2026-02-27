@@ -1,0 +1,23 @@
+{
+  "name": "agents",
+  "version": "1.0.0",
+  "description": "A POC Agent Utilisation Project",
+  "homepage": "https://github.com/dysback/agents#readme",
+  "bugs": {
+    "url": "https://github.com/dysback/agents/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dysback/agents.git"
+  },
+  "license": "GPL-3.0-only",
+  "author": "Damir Zelenika <damir.zelenika@tutamail.com>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "dependencies": {
+    "eslint": "^10.0.2"
+  }
+}
