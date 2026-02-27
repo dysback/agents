@@ -7,9 +7,29 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <main>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="/" class="site-header__logo">Agents</a>
+            {{#showMenu}}
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul class="site-nav__list">
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </nav>
+            {{/showMenu}}
+        </div>
+    </header>
+
+    <main class="site-main">
         {{{ content }}}
     </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p>&copy; {{ year }} Agents</p>
+        </div>
+    </footer>
+
     {{{ scripts }}}
 </body>
 </html>

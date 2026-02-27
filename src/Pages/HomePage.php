@@ -29,9 +29,11 @@ class HomePage
         $template = $this->mustache->loadTemplate('master');
 
         echo $template->render([
-            'title'   => 'Home',
-            'content' => $content,
-            'scripts' => '<script src="/js/index.js" type="module"></script>',
+            'title'    => 'Home',
+            'content'  => $content,
+            'scripts'  => '<script src="/js/index.js" type="module"></script>',
+            'showMenu' => true,
+            'year'     => date('Y'),
         ]);
     }
 }

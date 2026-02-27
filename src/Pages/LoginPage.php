@@ -30,6 +30,7 @@ class LoginPage
             'title'   => 'Login',
             'content' => $content,
             'scripts' => '<script src="/js/login.js" type="module"></script>',
+            'year'    => date('Y'),
         ]);
     }
 }
